@@ -1,0 +1,147 @@
+@charset "UTF-8";
+:root{
+    --main: #14107c;
+    --primary: #0a0a0a;
+    --secondary: #222121;
+    --white: #fff;
+    --res: #444343;
+    --red: #dc3545;
+    --green: #198754;
+    --orange: #fd7e14;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none; list-style: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.2rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+    background: linear-gradient(120deg, var(--main), var(--primary));
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: linear-gradient(120deg, var(--primary), var(--main));
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(180deg, var(--main), var(--primary));
+}
+section{
+    margin: 4rem auto;
+    padding: 5rem 7%;
+    width: 80%;
+    max-width: 550px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .7);
+    border-radius: .5rem;
+    background-color: var(--secondary);
+    overflow-y: auto;
+}
+section > h1{
+    font-size: 4rem;
+    color: var(--white);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+form .btn{
+    width: 100%;
+}
+.inputBox{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+.inputBox input {
+    background-color: var(--secondary);
+    border: .2rem solid var(--main);
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    padding: 2rem;
+    width: 100%;
+    color: var(--white);
+}
+#res {
+    padding: 1.2rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--white);
+    text-align: center;
+    border-radius: .5rem;
+    width: 100%;
+    background: var(--res);
+}
+#res > p{
+    font-size: 1.7rem;
+    padding: .1rem 0;
+}
+
+.hide{
+    display: none;
+}
+
+.msg{
+    font-size: 2rem;
+    color: var(--white);
+    padding: 1rem;
+    margin: 1rem;
+}
+.erro{
+    background-color: var(--red);
+}
+.aviso{
+    background-color: var(--orange);
+}
+.certo{
+    background-color: var(--green);
+}
+
+
+@media(max-width: 992px){
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 3rem;
+    }
+    section > h1{
+        font-size: 3.5rem;;
+    }
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+    html{
+        font-size: 50%;
+    }
+    section{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        margin: auto;
+    }
+    section > h1{
+        font-size: 3rem;;
+    }
+}

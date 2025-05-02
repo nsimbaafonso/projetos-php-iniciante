@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validação de Formulário</title>
+    <link href="fonts/fontawesome-6.5.2/css/fontawesome.css" rel="stylesheet">
+    <link href="fonts/fontawesome-6.5.2/css/brands.css" rel="stylesheet">
+    <link href="fonts/fontawesome-6.5.2/css/solid.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style type="text/css">
+        body{
+            background-color: #edeaef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+    </div>
+
+    <section class="container-sm py-3">
+        <h1 class="text-center">Formulário de Contato</h1>
+        <form action="" method="POST" autocomplete="off">
+            <div class="my-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome" required>
+            </div>
+
+            <div class="my-3">
+                <label for="email" class="form-label">Email</label>
+                <input class="form-control" type="text" name="email" id="email" placeholder="examplo@gmail.com" required>
+            </div>
+
+            <div class="my-3">
+                <label for="assunto" class="form-label">Assunto</label>
+                <input class="form-control" type="text" name="assunto" id="assunto" placeholder="Seu assunto" required>
+            </div>
+
+            <div class="my-3">
+                <label class="form-label" for="mensagem">Mensagem</label>
+                <textarea class="form-control" name="mensagem" id="mensagem" placeholder="Sua mensagem..." required style="height: 150px; resize: none;"></textarea>
+            </div>
+
+            <button type="submit" name="enviar" class="btn btn-primary">ENVIAR MENSAGEM</button>
+         </form>
+    </section>
+    <!--end container-->
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+</body>
+</html>
