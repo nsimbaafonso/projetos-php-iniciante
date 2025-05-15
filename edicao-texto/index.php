@@ -14,12 +14,12 @@ if (isset($_POST['formatar'])) {
     * @param  string $original
     * @return string
 */
-public function slug($original)
+ /*public function slug($original)
 {
-        $slug = str_replace(" ", "-", $original);
-        $slug = preg_replace('/[^\w\d\-\_]/i', '', $slug);
-        return strtolower($slug);
-}
+    $slug = str_replace(" ", "-", $original);
+    $slug = preg_replace('/[^\w\d\-\_]/i', '', $slug);
+    return strtolower($slug);
+}*/
 ?>
 <!DOCTYPE html>
 <html lang="pt-ao">
